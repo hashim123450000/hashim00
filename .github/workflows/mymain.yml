@@ -32,7 +32,6 @@ jobs:
       - name: Install NodeJS
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./ http://venomous-month15056.surge.sh/
-  
+        run: surge ./ http://venomous-month15056.surge.sh --token ${{secret.SURGE_TOKEN}}  
         
      
